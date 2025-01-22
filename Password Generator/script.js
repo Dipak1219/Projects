@@ -43,12 +43,14 @@ const pasaswordGenerator = () => {
 }
 
 icon.addEventListener("click", () => {
+     if (passBox.value.length > 0) {
     navigator.clipboard.writeText(passBox.value);
     icon.innerText = "✓";
     icon.title = "password copied!";
-    
-    setTimeout(()=> {
-        icon.innerText = "content_copy";
-        icon.title = "";
-    },3000)
+  }
+
+  setTimeout(() => {
+    icon.innerText = "content_copy";
+    icon.title = "";
+  }, 1500);
 })
