@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".a1").animate(
+            {
+              left: "100px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            1300
+          );
+
+          $(".a2").animate(
+            {
+              left: "200px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            1200
+          );
+
+          $(".a3").animate(
+            {
+              left: "300px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            1100
+          );
+
+          $(".a4").animate(
+            {
+              left: "400px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            1000
+          );
+
+          $(".a5").animate(
+            {
+              left: "500px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            900
+          );
+
+          $(".a6").animate(
+            {
+              left: "600px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            800
+          );
+
+          $(".a7").animate(
+            {
+              left: "700px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            700
+          );
+
+          $(".a8").animate(
+            {
+              left: "800px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            600
+          );
+
+          $(".a9").animate(
+            {
+              left: "900px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            500
+          );
+
+          $(".a10").animate(
+            {
+              left: "1000px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            400
+          );
+
+          $(".a11").animate(
+            {
+              left: "1100px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            300
+          );
+
+          $(".a12").animate(
+            {
+              left: "1200px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            200
+          );
+
+          $(".a13").animate(
+            {
+              left: "1300px",
+              rotate: "30deg",
+              bottom: "20px",
+            },
+            100
+          );
+        });
+      });
+    </script>
+    <style>
+      .btn {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        outline: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #df2d95;
+        min-width: 100px;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 16px 20px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        opacity: 0.95;
+      }
+
+      .btn .animation {
+        border-radius: 100%;
+        animation: ripple 0.6s linear infinite;
+      }
+
+      @keyframes ripple {
+        0% {
+          box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1),
+            0 0 0 20px rgba(255, 255, 255, 0.1),
+            0 0 0 40px rgba(255, 255, 255, 0.1),
+            0 0 0 60px rgba(255, 255, 255, 0.1);
+        }
+
+        100% {
+          box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1),
+            0 0 0 40px rgba(255, 255, 255, 0.1),
+            0 0 0 60px rgba(255, 255, 255, 0.1),
+            0 0 0 80px rgba(255, 255, 255, 0);
+        }
+      }
+      *{
+        background-color: cadetblue;
+      }
+      .all {
+        overflow: hidden;
+        border: 1px solid;
+        background-image: url("shizuka.jpg");
+        background-size: cover;
+        transition: 0.9s;
+        perspective: 1000px;
+        perspective-origin: right center;
+        animation: animate 2s 1s linear;
+        box-shadow: 5px 5px 20px rgb(22, 17, 17);
+      }
+      @keyframes animate {
+        from{
+            transform: rotate(0deg);
+        }        
+        to{
+            transform: rotate(360deg);
+        }
+      }
+      /* .all:hover{
+        transform: rotateX(180deg);
+        background-image: url("back.jpg");
+        background-size: cover;
+        cursor: pointer;
+      } */
+    </style>
+  </head>
+  <body>
+    <button class="btn">
+      <i class="animation"></i>Click Me!<i class="animation"></i>
+    </button>
+    <div class="container">
+      <div
+        class="a1 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #f0cd04;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a2 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #04c1f0;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a3 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #0424f0;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a4 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #7ef004;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a5 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #0804f0;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a6 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #f004c9;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a7 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #04f014;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a8 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #4775f1;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a9 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #04c5f0;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a10 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #f00404;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a11 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #3ff004;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a12 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #f004e4;
+          position: absolute;
+        "
+      ></div>
+
+      <div
+        class="a13 all"
+        style="
+          height: 210px;
+          width: 125px;
+          border-radius: 15px;
+          background-color: #f3f645;
+          position: absolute;
+        "
+      ></div>
+    </div>
+  </body>
+</html>
